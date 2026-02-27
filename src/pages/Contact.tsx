@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 import { Mail, Phone, MapPin, Send, Check, AlertCircle } from 'lucide-react';
 import { supabase, isSupabaseConfigured } from '@/lib/supabase';
 import emailjs from 'emailjs-com';
-
+import { Link } from 'react-router-dom';
 export default function Contact() {
   const [formData, setFormData] = useState({
     nom: '',
@@ -166,7 +166,7 @@ export default function Contact() {
             <p className="text-sm text-gray-700 mb-4">
               Pour les demandes urgentes ou les prises de rendez-vous immédiates, privilégiez le Dating Pro.
             </p>
-            <a href="/dating-pro" className="inline-block bg-white text-green px-6 py-2 rounded-full text-sm font-bold hover:bg-green hover:text-white transition-colors">
+            <Link to="/dating-pro" className="inline-block bg-white text-green px-6 py-2 rounded-full text-sm font-bold hover:bg-green hover:text-white transition-colors">
               Réserver un créneau
             </a>
           </div>

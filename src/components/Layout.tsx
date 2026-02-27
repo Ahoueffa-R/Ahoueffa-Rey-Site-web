@@ -99,7 +99,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   onClick={() => {
                     setIsMenuOpen(false);
                     window.scrollTo(0, 0);
-                    window.location.href = link.path;
                   }}
                   className="text-2xl font-serif text-brown hover:text-green active:text-green transition-all duration-200"
                 >
@@ -111,7 +110,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 onClick={() => {
                   setIsMenuOpen(false);
                   window.scrollTo(0, 0);
-                  window.location.href = '/dating-pro';
                 }}
                 className="bg-brown text-white px-8 py-3 rounded-full text-lg font-medium mx-auto mt-4 inline-block transition-transform hover:bg-brown/90"
               >

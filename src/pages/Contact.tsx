@@ -61,7 +61,7 @@ export default function Contact() {
     // 2. EmailJS Notification
     try {
       const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_CONTACT;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_CONTACT;
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
       if (serviceId && templateId && publicKey) {

@@ -89,7 +89,7 @@ export default function DatingPro() {
     // 2. EmailJS Notification (Decoupled)
     try {
       const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_DATING;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_PRO;
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
       if (serviceId && templateId && publicKey) {
